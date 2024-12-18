@@ -1,0 +1,300 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/swiper-bundle.min.css">
+    <link rel="shortcut icon" href="./img/favicon-logo.png" type="image/x-icon">
+    <script src="static/js/swiper-bundle.min.js"></script>
+    <script src="static/js/gsap.min.js"></script>
+    <style>
+        @media screen and (max-width: 767px) {
+
+            /* 火焰 */
+            .flame {
+                width: 50px;
+                height: 50px;
+                background: linear-gradient(180deg, #bf30c4, #c772b5, #ffbb00, #ffff00);
+                /* 红、橙、黄渐变 */
+                border-radius: 50%;
+                /* 圆形 */
+                animation: flameAnimation 1.5s infinite;
+                /* 应用动画 */
+                opacity: 0.4;
+            }
+
+            .flame02 {
+                width: 50px;
+                height: 50px;
+                background: linear-gradient(180deg, #308ec4, #71a3c4);
+                border-radius: 50%;
+                animation: flame02Animation 1.5s infinite;
+                opacity: 0.4;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+
+            /* 火焰 */
+            .flame {
+                width: 90px;
+                height: 90px;
+                background: linear-gradient(180deg, #bf30c4, #c772b5, #ffbb00, #ffff00);
+                /* 红、橙、黄渐变 */
+                border-radius: 50%;
+                /* 圆形 */
+                animation: flameAnimation 1.5s infinite;
+                /* 应用动画 */
+                opacity: 0.2;
+            }
+
+            .flame02 {
+                width: 90px;
+                height: 90px;
+                background: linear-gradient(180deg, #308ec4, #71a3c4);
+                border-radius: 50%;
+                animation: flame02Animation 1.5s infinite;
+                opacity: 0.2;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+
+            /* 火焰 */
+            .flame {
+                width: 150px;
+                height: 150px;
+                background: linear-gradient(180deg, #bf30c4, #c772b5, #ffbb00, #ffff00);
+                /* 红、橙、黄渐变 */
+                border-radius: 50%;
+                /* 圆形 */
+                animation: flameAnimation 1.5s infinite;
+                /* 应用动画 */
+                opacity: 0.2;
+            }
+
+            .flame02 {
+                width: 120px;
+                height: 120px;
+                background: linear-gradient(180deg, #308ec4, #71a3c4);
+                border-radius: 50%;
+                animation: flame02Animation 1.5s infinite;
+                opacity: 0.2;
+            }
+        }
+
+
+
+        @keyframes flameAnimation {
+            0% {
+                background: linear-gradient(180deg, #bf30c436, #c772b5, #ffff0033);
+                /* 初始颜色 */
+            }
+
+            50% {
+                background: linear-gradient(90deg, #d19ed3, #ffbb001f, #ffff0085);
+                /* 初始颜色 */
+            }
+
+            100% {
+                background: linear-gradient(90deg, #bf30c436, #d19ed3);
+                /* 最终颜色 */
+            }
+        }
+
+        @keyframes flame02Animation {
+            0% {
+                background: linear-gradient(180deg, #308ec471, #c5975171);
+                /* 初始颜色 */
+            }
+
+            50% {
+                background: linear-gradient(90deg, #308ec471, #ffbb001f, #ffff0085);
+                /* 初始颜色 */
+            }
+
+            100% {
+                background: linear-gradient(90deg, #0d2e4171, #ccc34871);
+                /* 最终颜色 */
+            }
+        }
+    </style>
+
+    <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '566381419359067');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=566381419359067&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+
+<body class=" relative max-w-screen-xl mx-auto bg-black/80">
+    <div class="bg-repeat-y bg-contain" style="background-image:url('static/image/bg.jpg');">
+        <!--首圖--->
+        <div class=" relative">
+            <div>
+                <img src="static/picture/a1.png" alt="" class=" aspect-auto w-full h-full object-cover">
+            </div>
+            <div class="flame absolute top-[15%] md:top-[18.5%] right-[7%]"></div>
+            <div class="flame02 absolute top-[19%]  left-[14%] lg:top-[23%] lg:left-[15%]"></div>
+        </div>
+
+        <div class="relative flex justify-center items-center overflow-hidden">
+            <img src="static/picture/a3.png" alt="" class=" aspect-auto w-full h-full object-contain">
+            <div>
+                <div class="absolute top-[20%] left-[7.7%] z-40 w-[82%] yanimation opacity-50 translate-y-28">
+                    <img src="static/picture/a4-1.png" alt="" class=" aspect-auto w-full h-full object-cover">
+                </div>
+                <div class="absolute top-[35%] left-[7.7%] z-30 w-[82%] yanimation opacity-50 translate-y-28">
+                    <img src="static/picture/a4-2.png" alt="" class=" aspect-auto w-full h-full object-cover">
+                </div>
+                <div class="absolute top-[50%] left-[7.7%] z-20 w-[82%] yanimation opacity-50 translate-y-28">
+                    <img src="static/picture/a4-3.png" alt="" class=" aspect-auto w-full h-full object-cover">
+                </div>
+                <div class="absolute top-[63%] left-[7.7%] z-10 w-[82%] yanimation opacity-50 translate-y-28">
+                    <img src="static/picture/a4-4.png" alt="" class=" aspect-auto w-full h-full object-cover">
+                </div>
+            </div>
+            <div class="absolute bottom-5 left-[7.5%] z-50 w-[82%]">
+                <img src="static/picture/a2.png" alt="" class=" aspect-auto w-full h-full object-contain">
+            </div>
+        </div>
+        <!--swiper-->
+        <div class="pt-10 lg:h-full">
+            <div>
+                <img src="static/picture/a5.png" alt="" class=" aspect-auto w-full h-full object-cover">
+            </div>
+            <div class="relative">
+                <div class="swiper mySwiper relative">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="static/picture/a5-1.png" alt="" class=" aspect-auto w-full h-full object-cover">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="static/picture/a5-2.png" alt="" class=" aspect-auto w-full h-full object-cover">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="static/picture/a5-3.png" alt="" class=" aspect-auto w-full h-full object-cover">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="static/picture/a5-4.png" alt="" class=" aspect-auto w-full h-full object-cover">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="static/picture/a5-5.png" alt="" class=" aspect-auto w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="">
+                        <img src="static/picture/a5-6.png" alt="" class="swiper-button-next aspect-auto w-full h-full object-cover">
+                    </div>
+                    <div class="">
+                        <img src="static/picture/a5-7.png" alt="" class="swiper-button-prev aspect-auto w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class=" absolute -bottom-[5%]  left-0 lg:left-[45px] lg:w-fit lg:h-full">
+                    <img src="static/picture/a5-bg.png" alt="" class=" aspect-auto w-full h-full object-contain">
+                </div>
+            </div>
+        </div>
+
+        <!--得獎公告-->
+        <div class="pt-20 xl:pb-[600px]">
+            <div class="relative h-[80vh]  md:pb-[1200px]">
+                <div>
+                    <img src="static/picture/gift-bg.png" alt="" class="w-full h-full object-cover">
+                </div>
+                <div class=" absolute top-[21%] lg:top-[27%] xl:top-[35%]  left-6 md:left-8 lg:left-[10%] 2xl:left-[15%] z-10 md:w-fit xl:w-fit">
+                    <div class="max-h-[150px] md:max-h-[250px] lg:min-h-[350px] xl:min-h-[550px] overflow-hidden lg:w-full">
+                        <div class="allimg  w-full">
+                            <div class="flex flex-shrink-0 imgbox w-full">
+                                <div class="relative w-full ">
+                                    <img class=" aspect-auto w-full h-full object-contain" src="static/picture/gift.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--按鈕-->
+        <div class=" fixed bottom-0 left-0 lg:left-1/2 lg:-translate-x-1/2 max-w-screen-xl lg:w-screen mx-auto z-50">
+            <div class="relative ">
+                <div class="h-full lg:h-min">
+                    <img src="static/picture/a7.png" alt="" class="aspect-[375/180] md:aspect-[768/200] lg:aspect-[1280/200] w-full h-full object-cover md:object-fill ">
+                </div>
+                <div class="absolute top-[60%] left-1/2 -translate-x-1/2 z-10 ">
+                    <div class="flex space-x-1 md:space-x-10 lg:space-x-20  items-center">
+                        <a href="https://cutt.ly/MeVuudFr" onclick="fbq('track', 'ClickRegister');" class="block w-[180px] md:w-full">
+                            <img src="static/picture/a7-1.png" alt="" class=" aspect-auto w-full h-full object-cover hover:scale-105 transition-all duration-500">
+
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="static/js/ScrollTrigger.min.js"></script>
+
+<script type="module">
+
+    let yAnimation = gsap.utils.toArray('.yanimation');
+    ScrollTrigger.batch(yAnimation, {
+        onEnter: batch => gsap.to(batch, {
+            opacity: 1,
+            stagger: 0.4,
+            duration: 1.2,
+            x: 0,
+            y: 0
+        }),
+        // markers: true,
+        start: "bottom 100%",
+
+    });
+
+    let swiper = new Swiper(".mySwiper", {
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+
+
+    //留言板
+    const imgbox = document.querySelector(".imgbox");
+    const allimg = document.querySelector(".allimg");
+    let divClone = imgbox.cloneNode(true);
+    let time = 0;
+    allimg.appendChild(divClone);
+
+    function move() {
+        if (time <= imgbox.clientHeight) {
+
+            if (time == -imgbox.clientHeight) {
+                time = 0;
+            }
+            allimg.style.transform = `translateY(` + time + `px)`;
+            time -= 0.5;
+        }
+    }
+    let go = window.setInterval(move, 20);
+</script>
+
+</html>
